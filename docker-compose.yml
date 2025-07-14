@@ -1,0 +1,11 @@
+services:
+  meta_frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: meta_frontend
+    volumes:
+      - ./meta_frontend/src:/app/src
+      - ./meta_frontend/public:/app/public
+    ports:
+      - "3000:3000"
