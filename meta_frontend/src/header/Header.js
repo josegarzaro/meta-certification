@@ -1,8 +1,10 @@
 import React from 'react';
 import Navbar from './navigation/Navbar';
+import './Header.css';
 function Header(){
-    return (<header>
-        <Image src="logo.png" alt="Logo" />
+    return (<header className="header standard-flex-container">
+        <img src="images/Logo.svg" alt="Little lemon logo" />
+
         <Navbar/>
     </header>);
 }

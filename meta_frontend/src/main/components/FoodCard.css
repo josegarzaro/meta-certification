@@ -1,0 +1,14 @@
+.food-card-image {
+    max-height: 50px;
+    border-radius: 8px;
+}
+
+.food-card-content {
+    padding: 10px;
+    text-align: left;
+    max-width: 250px
+}
+
+.food-card {
+    flex: 0 0 1;
+}
