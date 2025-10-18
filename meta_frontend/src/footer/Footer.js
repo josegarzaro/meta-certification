@@ -3,7 +3,7 @@ import Navbar from '../header/navigation/Navbar';
 import './Footer.css'
 
 function Footer(){
-    return (<footer className="standard-flex-container" style={{justifyContent: 'center', alignItems: 'flex-start', gap: '4em'}}>
+    return (<footer className="standard-flex-container" style={{justifyContent: 'center', alignItems: 'flex-start', gap: '4em', backgroundColor: '#D9D9D9'}}>
         <figure>
            <img src="images/restaurant.jpg" alt="Image of something" max-width="50 px"/>
         </figure>

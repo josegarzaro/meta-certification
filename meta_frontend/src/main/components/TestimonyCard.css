@@ -1,0 +1,9 @@
+.testimony-card-image {
+    max-height: 50px;
+    border-radius: 8px;
+}
+.testimony-card-content {
+    padding: 10px;
+    text-align: left;
+    max-width: 250px
+}

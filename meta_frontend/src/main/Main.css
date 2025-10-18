@@ -1,0 +1,18 @@
+main > section:nth-child(odd) {
+    background-color: #495E57; 
+    color: white
+}
+
+button {
+    background-color: #F4CE14;
+    border-radius: 8%;
+    border : none;
+    height: 2.5em;
+    
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}

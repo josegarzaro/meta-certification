@@ -1,14 +1,23 @@
 .food-card-image {
-    max-height: 50px;
+    max-width: 250px;
     border-radius: 8px;
+    padding: 10px;
 }
 
 .food-card-content {
     padding: 10px;
     text-align: left;
-    max-width: 250px
+    max-width: 250px;
+    background-color: #EDEFEE;
+    border-radius: 8px;
 }
 
 .food-card {
     flex: 0 0 1;
+}
+
+.food-card-price{
+    font-weight: bold;
+    color: #EE9972;
+    background-color: #EDEFEE;
 }
