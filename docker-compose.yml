@@ -9,3 +9,12 @@ services:
       - ./meta_frontend/public:/app/public
     ports:
       - "3000:3000"
+  meta_frontend_tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: meta_frontend_tests
+    volumes:
+      - ./meta_frontend/src:/app/src
+      - ./meta_frontend/tests:/app/tests
+    command: ["npm", "test"]

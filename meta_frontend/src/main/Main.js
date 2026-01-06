@@ -2,7 +2,9 @@ import React from 'react';
 import FoodCard from './components/FoodCard';
 import TestimonyCard from './components/TestimonyCard';
 import './Main.css';
+import {useNavigate} from 'react-router';
 function Main(){
+    const navigate = useNavigate();
     return (<main className="standard-flex-container" style={{flexDirection: 'column', alignItems: 'center'    }}>
         <section className="standard-flex-container" style={{paddingLeft:'10px',width:'60%', paddingBottom:'10px'}} >
             <article className="standard-flex-container" style={{flexDirection: 'column',  alignItems: 'flex-start' , gap:'0em'   }}>
@@ -13,7 +15,7 @@ function Main(){
             <p style={{flex: '0 0 2' , maxWidth:'250px'}} >Little lemon is a nice classy restaurant, Our environment is approapiate for children.
                 All our ingredients are natural and organic. We have a wide variety of meals to choose from.
             </p>
-            <button style={{flex: '0 0 1'}} >Reserve a table </button>
+            <button style={{flex: '0 0 1'}} onClick={() => navigate("/booking")}>Reserve a table </button>
             </article>
             <figure style={{flex: '0 0 1'}}>
                 <img src="images/restaurant.jpg" alt="Image of something" style={{maxWidth:"350px"}}/>
