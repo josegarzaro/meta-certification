@@ -15,7 +15,7 @@ function Main(){
             <p style={{flex: '0 0 2' , maxWidth:'250px'}} >Little lemon is a nice classy restaurant, Our environment is approapiate for children.
                 All our ingredients are natural and organic. We have a wide variety of meals to choose from.
             </p>
-            <button style={{flex: '0 0 1'}} onClick={() => navigate("/booking")}>Reserve a table </button>
+            <button aria-label="Go to the page to reserve a table" style={{flex: '0 0 1'}} onClick={() => navigate("/booking")}>Reserve a table </button>
             </article>
             <figure style={{flex: '0 0 1'}}>
                 <img src="images/restaurant.jpg" alt="Image of something" style={{maxWidth:"350px"}}/>
@@ -24,7 +24,7 @@ function Main(){
         <section className="standard-flex-container" style={{flexDirection: 'column', width:'60%',alignItems: 'center'}}>
             <div className="standard-flex-container" style={{justifyContent: 'space-between', alignItems: 'center', width: '100%'}}>
                 <h2>Specials</h2>
-                <button>Online Menu</button>
+                <button aria-label="Go to the Online menu">Online Menu</button>
             </div>
             <section className="standard-flex-container" style={{justifyContent: 'space-between', alignItems: 'center', gap: '2em'}}>
                 <FoodCard 
